@@ -61,7 +61,7 @@ class UserProfile(AbstractBaseUser, PermissionsMixin):
     is_active = models.BooleanField(default = True)
 
     # Create is_staff field to determine if the user is active or not, by default user is active
-    is_staff = models.BooleanField()
+    is_staff = models.BooleanField(default = False)
 
     objects = UserProfileManager()
 
